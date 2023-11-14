@@ -51,7 +51,7 @@ The code for this project is hosted on GitHub. You can find it [here](https://gi
 
 ## Hosting
 
-The application is hosted on GitHub, and you can access it [here](https://ananthuak16.github.io/Super-Hero-Hunter/).
+The application is hosted on GitHub, and you can access it [here](https://ananthuak16.github.io/music-player-CN-with-JS/).
 
 
 
