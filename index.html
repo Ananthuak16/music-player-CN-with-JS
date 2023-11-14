@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+    
+<!-- toggle theme  starts -->
+    <nav>
+        <div class="toggle-btn" onclick="toggleTheme()">
+            <i class="fa-solid fa-toggle-off" id="toggleOffIcon"></i>
+            <i class="fa-solid fa-toggle-on hidden" id="toggleOnIcon"></i>
+        </div>
+    </nav>
+
+    <!-- toggle theme  ends -->
+
+<!-- main container starts  -->
+
+<div class="main-container">
+
+
+    <!-- filter by genres starts -->
+    <div class="songsFilter">
+        <div class="allSongList">
+        
+            <h3 id="Filter">Filter By Genre</h3>
+             <!-- Adding a dropdown list for genres -->
+             <label for="genreFilter">Select Genre:</label>
+             <select id="genreFilter">
+                 <option value="all">All Genres</option>
+                 <option value="rock">Rock</option>
+                 <option value="pop">Pop</option>
+                 <option value="hip-hop">Hip Hop</option>
+             </select>
+ 
+
+
+
+        </div>
+        <div class="SongContainer"></div>
+
+        
+    </div>
+    <!-- filter by genres ends -->
+
+    <!-- music player starts -->
+
+<div class="container ">
+        <div class="top">
+            
+            <i class="fas fa-bars menu-btn" style="color: #e1e2e5;"></i>
+            <!-- <i class="fas fa-search" style="color: #e1e2e5;"></i> -->
+
+
+            
+        </div>
+        <div class="cover-image"></div>
+        <div class="player-body"></div>
+        <div class="list-wrapper">
+            <table class="list" id="playlist">
+                <tr class="song">
+                    <td class="no">
+                        <h5>1</h5>
+
+                    </td>
+                    <td class="title">
+                        <h6>Song Titles</h6>
+
+                    </td>
+                    <td class="length">
+                        <h5>2:03</h5>
+                    </td>
+                    <td>
+                        
+                        <i class="fas fa-heart"></i>
+                         
+                        
+
+                        
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <!-- progress of the audio starts -->
+
+
+        <div class="prog">
+
+            <div class="time">
+                <div class="start">
+                    <p id="start"> 0:00</p>
+                </div>
+                <div class="end">
+                    <p id="end"> 0:00</p>
+                </div>
+
+            </div>
+            <div class="line">
+                <div class="lineChild"></div>
+            </div>
+
+            <i class="fa-solid fa-plus" style="color: #c0cbde;" onclick="addToCurrentPlaylist()"></i>
+           
+        </div>
+        <!-- progress of the audio ends-->
+
+
+        <!-- song title and controls starts -->
+
+
+        <div class="info">
+            <h2>song title</h2>
+            <h3>artist</h3>
+        </div>
+        <div class="controls">
+           
+            
+            <i class="fa-solid fa-backward-step" id="prev" ></i>
+            <i class="fa-solid fa-play fa-solid fa-pause" id="playpause" ></i>
+            
+            <i class="fa-solid fa-forward-step" id="next" ></i>
+        </div>
+        <div class="more-controls">
+            <i class="fas fa-heart" id="current-favourite"></i>
+          
+        </div>
+
+        <p class="current-song-title">song title</p>
+        
+
+
+
+    
+</div>
+ <!-- song title and controls ends -->
+
+
+
+ <!-- music player ends -->
+
+
+
+  <!-- play list starts -->
+  <div class="playlistContainer">
+    <div class="playlist">
+        
+        <div class="newPlaylist">
+            <input type="text" id="playlistName" placeholder="Enter playlist name">
+            <button onclick="createPlaylist()">Create Playlist</button>
+        </div>
+
+        <div class="currentPlaylist">
+            <h3 id="currentPlaylistsTitle">Current Playlists</h3>
+            <ul id="currentPlaylistsList"></ul>
+        </div>
+
+        <div class="allPlaylist" id="allPlaylists">
+            <h3 id="allPlaylistsTitle">All Playlists</h3>
+        </div>
+    </div>
+</div>
+
+<!-- play list ends -->
+
+
+
+</div>
+
+
+<!-- main container ends  -->
+
+
+
+
+    <!-- JavaScript to handle functionality -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
