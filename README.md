@@ -47,7 +47,7 @@ The project includes a theme toggle button in the navigation bar. Clicking the b
 
 ## GitHub Repository
 
-The code for this project is hosted on GitHub. You can find it [here]([https://github.com/Ananthuak16/music-player-CN-with-JS.git]).
+The code for this project is hosted on GitHub. You can find it [here](https://github.com/Ananthuak16/music-player-CN-with-JS.git).
 
 ## Hosting
 
